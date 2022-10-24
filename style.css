@@ -43,6 +43,7 @@ body {
     grid-area: aside;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .oferta {
@@ -90,8 +91,15 @@ nav ul li {
     padding: 10px;
 }
 
+/*Estilo del logo*/
+
 .logo {
     width: 21%;
+}
+
+.logo_img {
+    width: 5em;
+    color: red;
 }
 
 .nav {
@@ -117,14 +125,14 @@ a > p {
 /*Estilo enlaces*/
 
 a {
-    color: white;
+    color: rgb(24, 219, 105);
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0);
 }
 
 a:hover {
-    color: rgb(24, 219, 105);
-    text-decoration: underline;
+    color: rgb(181, 203, 209);
+    text-dergb(39, 160, 91)e;
 }
 
 /*Estilo novedades*/
@@ -134,6 +142,14 @@ a:hover {
     margin: 20px;
 }
 
+.novedadesP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 img {
     width: 300px;
+    padding: 20px;
 }
