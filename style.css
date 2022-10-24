@@ -1,0 +1,139 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Estilo principal de todos los contenedores*/
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside oferta oferta"
+    "aside contenido contenido"
+    "aside contenido contenido"
+    "footer footer footer";
+    grid-gap: 10px;
+}
+
+.header {
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    margin-bottom: 15px;
+}
+
+.header > div {
+    padding: 20px;
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+.aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+}
+
+.oferta {
+    grid-area: oferta;
+    background-image: url("./wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-image: url("./wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*Estilo del footer*/
+
+.footer {
+    grid-area: footer;
+    height: 15vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer > div {
+    min-width: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer:hover {
+    background-color: rgb(24, 219, 105);
+}
+
+/*Estilo del menu*/
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.logo {
+    width: 21%;
+}
+
+.nav {
+    width: 57%;
+    display: flex;
+    justify-content: center;
+}
+
+.shop {
+    width: 21%;
+    display: flex;
+    justify-content: right;
+}
+
+a > p {
+    padding: 10px;
+}
+
+.header:hover {
+    background-color: black;
+}
+
+/*Estilo enlaces*/
+
+a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+a:hover {
+    color: rgb(24, 219, 105);
+    text-decoration: underline;
+}
+
+/*Estilo novedades*/
+
+.aside > div {
+    padding: 20px;
+    margin: 20px;
+}
+
+img {
+    width: 300px;
+}
