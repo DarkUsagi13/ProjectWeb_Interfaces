@@ -22,6 +22,8 @@ body {
     grid-gap: 10px;
 }
 
+/*Estilo header*/
+
 .header {
     background-color: black;
     grid-area: header;
@@ -39,6 +41,13 @@ body {
     font-size: 1.5em;
 }
 
+.header:hover {
+    background-color: rgb(20, 20, 20);
+    transition: .2s;
+}
+
+/*Estilo aside*/
+
 .aside {
     grid-area: aside;
     display: flex;
@@ -46,41 +55,96 @@ body {
     text-align: center;
 }
 
-.oferta {
-    grid-area: oferta;
-    background-image: url("./wallpaper.jpg");
-    background-position: center;
-    background-size: cover;
+.aside > div {
+    padding: 20px;
+    margin: 20px;
 }
+
+/*Estilo imagenes productos*/
+
+.imgP {
+    width: 250px;
+    padding: 20px;
+    transition: .2s;
+}
+
+.imgP:hover {
+    transform: scale(1.2);
+}
+
+/*Estilo ofertas*/
+
+.ofertaPadre {
+    grid-area: oferta;
+}
+
+.oferatHijo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.oferta > div {
+    display: flex;
+}
+
+#ofertas_title {
+    padding: 20px;
+    margin: 20px;
+}
+
+.ofertaProducto {
+    width: 20%;
+}
+
+/*Estilo contenido*/
 
 .contenido {
     grid-area: contenido;
-    background-image: url("./wallpaper.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 /*Estilo del footer*/
 
 .footer {
     grid-area: footer;
-    height: 15vh;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding: 25px;
 }
 
-.footer > div {
-    min-width: 10vh;
+.foot {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer div ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer div a img {
+    width: 150px;
+    height: 120px;
 }
 
 .footer:hover {
-    background-color: rgb(24, 219, 105);
+    background-color: rgb(20, 20, 20);
+    transition: .2s;
+}
+
+/*Estilo iconos*/
+
+i {
+    font-size: 25px;
+    padding: 20px;
 }
 
 /*Estilo del menu*/
@@ -89,17 +153,6 @@ nav ul li {
     display: inline-block;
     list-style-type: none;
     padding: 10px;
-}
-
-/*Estilo del logo*/
-
-.logo {
-    width: 21%;
-}
-
-.logo_img {
-    width: 5em;
-    color: red;
 }
 
 .nav {
@@ -114,12 +167,14 @@ nav ul li {
     justify-content: right;
 }
 
-a > p {
-    padding: 10px;
+/*Estilo del logo*/
+
+.logo {
+    width: 21%;
 }
 
-.header:hover {
-    background-color: black;
+.logo a > img {
+    width: 100px;
 }
 
 /*Estilo enlaces*/
@@ -131,25 +186,5 @@ a {
 }
 
 a:hover {
-    color: rgb(181, 203, 209);
-    text-dergb(39, 160, 91)e;
-}
-
-/*Estilo novedades*/
-
-.aside > div {
-    padding: 20px;
-    margin: 20px;
-}
-
-.novedadesP {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    width: 300px;
-    padding: 20px;
+    color: rgb(255, 255, 255);
 }

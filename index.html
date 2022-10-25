@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!--<script src="https://kit.fontawesome.com/ba6c2f3e9f.js" crossorigin="anonymous"></script>-->
+    <script src="https://kit.fontawesome.com/ba6c2f3e9f.js" crossorigin="anonymous"></script>
     <title>Tienda</title>
 </head>
 <body>
     <div class="contenedor">
         <div class="header">
             <div class="logo">
-                <a href=""><img class="logo_img" src="./logopc-removebg-preview.svg" alt=""></a>
+                <a href="./index.html"><img src="./logo.png" alt=""></a>
             </div>
             <div class="nav">
                 <nav>
@@ -25,32 +25,52 @@
                 </nav>
             </div>
             <div class="shop">
-                <a href=""><p>Shop</p></a>
-                <a href=""><p>Menu</p></a>
-                <a href=""><p>Login</p></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
         <div class="aside">
-            <h1>Hot sales</h1>
-            <div class="novedadesP">
+            <h1>Ofertas flash</h1>
+            <div class="productos">
                 <h3><a href="">Auriculares</a></h3>
-                <img src="https://static.carrefour.es/hd_510x_/imagenes/products/59022/11116/691/5902211116691/imagenGrande1.jpg" alt="">
+                <img class="imgP" src="https://static.carrefour.es/hd_510x_/imagenes/products/59022/11116/691/5902211116691/imagenGrande1.jpg" alt="">
             </div>
-            <div class="novedadesP">
+            <div class="productos">
                 <h3><a href="">Portátil MSI</a></h3>
-                <img src="https://www.vsgamers.es/thumbnails/product_gallery_large/uploads/products/msi/portatiles-gaming/msi-gp76-leopard-10ue-060es/Galeria/ordenador-portatil-gaming-msi-msi-gp76-leopard-10ue-060es-galeria3.jpg" alt="">
+                <img class="imgP" src="https://www.vsgamers.es/thumbnails/product_gallery_large/uploads/products/msi/portatiles-gaming/msi-gp76-leopard-10ue-060es/Galeria/ordenador-portatil-gaming-msi-msi-gp76-leopard-10ue-060es-galeria3.jpg" alt="">
             </div>
-            <div class="novedadesP">
+            <div class="productos">
                 <h3><a href="">RTX 4090</a></h3>
-                <img src="https://static-geektopia.com/storage/t/p/131/131026/816x381/rtx-4090.webp" alt="">
+                <img class="imgP" src="https://static-geektopia.com/storage/t/p/131/131026/816x381/rtx-4090.webp" alt="">
             </div>
         </div>
-        <div class="oferta">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus labore placeat aliquam, asperiores cumque aperiam dolorum voluptatum iste. Modi maiores non quae doloribus molestiae autem reiciendis minus vero repudiandae.</p>
-            <br>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur veniam quidem porro reiciendis ipsam a? Beatae voluptas, ratione, asperiores repellat praesentium alias blanditiis dignissimos repudiandae ad corrupti delectus. Doloribus.
-            </p>
+        <div class="ofertaPadre">
+            <div id="ofertas_title">
+                <h3>Seguro que te interesa...</h3>
+            </div>
+            <div class="ofertaHijo">
+                <div class="ofertaProducto">
+                    <p>Producto 1</p>
+                    <img class="imgP" src="http://img.pccomponentes.com/articles/57/574288/1444-intel-core-i9-12900k-52-ghz.jpg" alt="">
+                </div>
+                <div class="ofertaProducto">
+                    <p>Producto 2</p>
+                    <img class="imgP" src="https://ar.elitetechjo.com/wp-content/uploads/1634/45/EE00042.jpg.webp" alt="">
+                </div>
+                <div class="ofertaProducto">
+                    <p>Producto 3</p>
+                    <img class="imgP" src="https://talius.es/11113-large_default/Talius-silla-Camaleon-gaming-RGB-4D-butterfly-base-metalruedas-75mmgas.jpg" alt="">
+                </div>
+                <div class="ofertaProducto">
+                    <p>Producto 4</p>
+                    <img class="imgP" src="https://m.media-amazon.com/images/I/71csImp0u9L._AC_SS450_.jpg" alt="">
+                </div>
+                <div class="ofertaProducto">
+                    <p>Producto 5</p>
+                    <img class="imgP" src="https://m.media-amazon.com/images/I/71bRXOPX51L._AC_SY450_.jpg" alt="">
+                </div>
+            </div>
         </div>
         <div class="contenido">
             <p>
@@ -58,9 +78,41 @@
             </p>
         </div>
         <div class="footer">
-            <div class="foot">1</div>
-            <div class="foot">2</div>
-            <div class="foot">3</div>
+            <div class="foot">
+                <a href="./index.html"><img src="./logo.png" alt=""></a>
+            </div>
+            <div class="foot">
+                <p>Menú</p>
+            <br/>
+                <ul>
+                    <li><a href="">Hardware Cloud</a></li>
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Reviews</a></li>
+                    <li><a href="">Nuevos productos</a></li>
+                    <li><a href="">Soporte 24/7</a></li>
+                    <li><a href="">Carrito de compra</a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <p>Conócenos</p>
+            <br/>
+                <ul>
+                    <li><a href="">Trabajar con nosotros</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <p>Mi cuenta</p>
+                <br/>
+                <ul>
+                    <li><a href="">Iniciar sesión</a></li>
+                    <li><a href="">Registrarse</a></li>
+                    <li><a href="">Afiliado</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
