@@ -6,6 +6,8 @@
 
 body {
     width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -15,9 +17,10 @@ body {
     display: grid;
     grid-template-areas: 
     "header header header"
-    "aside oferta oferta"
-    "aside contenido contenido"
-    "aside contenido contenido"
+    "oferta oferta oferta"
+    "resenas resenas resenas"
+    "contenido contenido contenido"
+    "contenido contenido contenido"
     "footer footer footer";
     grid-gap: 10px;
     padding-left: 10px;
@@ -50,17 +53,41 @@ body {
 
 /*Estilo aside*/
 
-.aside {
-    grid-area: aside;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.resenas {
+    grid-area: resenas;
+    padding: 20px;
+    border-bottom: 1px solid #0e131f31;
 }
 
-.aside > div {
-    padding: 20px;
-    margin: 20px;
-    
+.resenasHijo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Esilo reviews*/
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.reviews > * {
+    padding: 10px;
+}
+
+.more {
+    margin-top: 10px;
+    width: 100px;
+    padding:10px;
+    border: none;
+    background-color: #FF8966;
+    border-radius: 5px;
+}
+
+.more:hover {
+    background-color: #ff541f;
 }
 
 /*Estilo imagenes productos*/
@@ -69,7 +96,7 @@ body {
     margin-top: 5px;
     width: 250px;
     padding: 20px;
-    transition: .2s;
+    
 }
 
 .imgP:hover {
@@ -80,17 +107,19 @@ body {
 
 .ofertaPadre {
     grid-area: oferta;
-    border-right: 1px solid #0e131f31;    
+    padding: 20px;
+    border-bottom: 1px solid #0e131f31;
 }
 
 .ofertaHijo {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 20px;
 }
 
-.oferta > div {
-    display: flex;
+.ofertaProducto {
+    width: 100%;
 }
 
 #ofertas_title {
@@ -98,20 +127,49 @@ body {
     margin: 20px;
 }
 
-.ofertaProducto {
-    width: 20%;
-}
-
 /*Estilo contenido*/
 
-.contenido {
+.contenidoPadre { 
     grid-area: contenido;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #0e131f31;
+}
+
+.contenidoHijo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.categorias {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #0e131f31;
+}
+
+/*Estilo marcas*/
+
+.marcas {
+    width: 100%;
+}
+
+.imgMarca {
+    width: 250px;
+    margin-top: 5px;
+    padding: 20px;
+    transition: .2s;
+}
+
+.imgMarca:hover {
+    transform: scale(1.1);
 }
 
 /*Estilo del footer*/
 
 .footer {
-    border-top: 1px solid #0e131f31;
     grid-area: footer;
     display: flex;
     flex-direction: row;
@@ -131,6 +189,7 @@ body {
 .footer div ul li {
     list-style-type: none;
     text-align: center;
+    padding: 10px;
 }
 
 .footer div a img {
@@ -202,7 +261,7 @@ nav {
 a {
     color: #252323;
     text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0);
+    text-align: center;
 }
 
 a:hover {
@@ -221,7 +280,30 @@ a:hover {
     color: rgb(71, 173, 105);
 }
 
-.boton {
-    padding: 5px;
+.comprar {
+    padding: 10px;
     margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF8966;
 }
+
+.comprar:hover {
+    background-color: #ff541f;
+}
+
+/*Estilo estrellas*/
+
+form {
+    padding: 10px;
+}
+
+label { 
+    color:grey;
+}
+
+input[type = "radio"] { 
+    display:none;
+}
+
+label:hover { color:orange;}
