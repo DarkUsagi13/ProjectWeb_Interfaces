@@ -499,15 +499,14 @@ div i {
 }
 
 .datos:focus {
-    background-color: #e9a220;
+    background-color: #FF8966;
 }
 
 .botonPagar {
-    color: white;
     font-weight: bolder;
     text-align: center;
     border: #0e131f31;
-    background-color: #e9a220;
+    background-color: #cccccc;
 }
 
 .botonPagar:hover {
@@ -517,4 +516,22 @@ div i {
 
 .imgPPago {
     width: 200px;
+}
+
+/*Estilo página catálogo*/
+
+.contenedorCatalogo {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "catalogo catalogo"
+    "footer footer";
+    grid-gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.catalogo {
+    display: flex;
+    flex-direction: row;
 }
