@@ -33,7 +33,7 @@
                 </nav>
             </div>
             <div class="shop">
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping not1"><span id="not2"></span></i></a>
                 <a href=""><i class="fa-solid fa-bars"></i></a>
                 <a href=""><i class="fa-solid fa-user"></i></a>
             </div>
@@ -41,9 +41,17 @@
         <div class="fichaP">
             <div class="imageneInfo">
                 <div class="fichaImagen">
-                    <div>
-                        <img class="imgF" src="https://thumb.pccomponentes.com/w-530-530/articles/1002/10023724/1354-pccom-gold-elite-intel-core-i5-11400f-16gb-500gbssd-rtx3060-comprar.jpg" alt="">
-                    </div>                    
+                    <div class="img_principal">
+                        <img id="imagen_carrito1" src="https://thumb.pccomponentes.com/w-530-530/articles/1002/10023724/1354-pccom-gold-elite-intel-core-i5-11400f-16gb-500gbssd-rtx3060-comprar.jpg"/>
+                        <img id="imagen_carrito2" src="https://thumb.pccomponentes.com/w-530-530/articles/1002/10023724/1354-pccom-gold-elite-intel-core-i5-11400f-16gb-500gbssd-rtx3060-comprar.jpg"/>
+                    </div>
+                    <div class="img_secundarias">
+                        <img class="imgAnimacion" src="https://thumb.pccomponentes.com/w-530-530/articles/1002/10023724/1354-pccom-gold-elite-intel-core-i5-11400f-16gb-500gbssd-rtx3060-comprar.jpg" alt="">
+                        <img class="imgAnimacion" src="https://thumb.pccomponentes.com/w-530-530/articles/1002/10023724/3271-pccom-gold-elite-intel-core-i5-11400f-16gb-500gbssd-rtx3060-especificaciones.jpg"/>
+                        <img class="imgAnimacion" src="https://thumb.pccomponentes.com/w-530-530/articles/1002/10023724/498-pccom-gold-elite-intel-core-i5-11400f-16gb-500gbssd-rtx3060-caracteristicas.jpg"/>
+                        <img class="imgAnimacion" src="https://thumb.pccomponentes.com/w-530-530/articles/1002/10023724/2545-pccom-gold-elite-intel-core-i5-11400f-16gb-500gbssd-rtx3060-review.jpg"/>
+                    </div>
+                    <script src="./animaciones.js"></script>
                 </div>
                 <div class="fichaInfo">
                     <div class="contenidoFicha">
@@ -96,7 +104,7 @@
                             <div>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
-                            <div>
+                            <div onclick="carritoAnimacion()">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span class="carritohide">Añadir al carrito</span>
                             </div>
